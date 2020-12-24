@@ -1,0 +1,23 @@
+prebuilt_etc {
+    name: "privapp_whitelist_com.android.yadayada-ext",
+    system_ext_specific: true,
+    sub_dir: "permissions",
+    src: "privapp_whitelist_com.android.yadayada-ext.xml",
+    filename_from_src: true,
+}
+
+android_app {
+    name: "YadaYada",
+    resource_dirs: ["res"],
+    sdk_version: "system_current",
+    min_sdk_version: "28",
+    updatable: true,
+    privileged: true,
+    system_ext_specific: true,
+    certificate: "platform",
+
+    srcs: ["src/**/*.java"],
+
+    required: ["privapp_whitelist_com.android.yadayada-ext"],
+
+}

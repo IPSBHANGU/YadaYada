@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:ellipsize="end" android:id="@+id/title" android:paddingTop="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_title" android:singleLine="true" android:textAlignment="viewStart" android:paddingStart="16dp" android:paddingEnd="16dp" style="?android:attr/windowTitleStyle"/>
+    <LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?android:attr/windowContentOverlay" android:layout_weight="1">
+        <ScrollView android:id="@+id/scrollView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:layout_weight="1" android:overScrollMode="ifContentScrolls">
+            <TextView android:textColor="#ffeeeeee" android:id="@+id/disclaimer_view" android:padding="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_html" style="?android:attr/textAppearanceSmall"/>
+        </ScrollView>
+        <Button android:textColor="#ffeeeeee" android:layout_gravity="right" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@android:string/ok" android:onClick="okClicked" style="@android:style/Widget.Material.Button.Borderless"/>
+    </LinearLayout>
+</LinearLayout>
+
