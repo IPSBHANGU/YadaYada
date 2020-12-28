@@ -4,7 +4,7 @@
     <string name="close_label">OK</string>
     <string name="disclaimer_feedback_button_label">Feedback</string>
     <string name="disclaimer_html">This device is enrolled in the Project OneOS Beta Program. The program allows Android developers and enthusiasts to try out pre-release versions of Project OneOS. To learn more about the Project OneOS Beta Program, or to opt-out, visit project-oneos.org. </string>
-    <string name="disclaimer_title">Project OneOS Beta Program</string>
+    <string name="disclaimer_title">Disclaimer</string>
     <!-- string name="software_version">%s (%s)</string -->
     <string name="tile_label">Project OneOS Beta Program</string>
 </resources>
